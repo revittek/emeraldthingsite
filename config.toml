@@ -1,0 +1,102 @@
+baseurl = "https://emeraldthing.com/"
+languageCode = "en-us"
+title = "Emerald Thing Reiki"
+theme = "hugo-strata-theme"
+disqusShortname = "reiki"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Kate Revitte"
+	description = "Reiki and tarot healing sessions"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**I'm Kate**, an intuitive reiki healer<br> and tarot reader<br>**Let your light shine brightly!**"
+		# The icons will be shown if you enter your username
+		twitter = "BatikCake"
+		instagram = "revkaterev"
+
+		copyright = [
+			"&copy; Kate Revitte LLC"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "Book a healing session"
+		content = "I am a certified Reiki II professional, member of the International Association of Reiki Professionals, and practitioner of the Usui lineage and Holy Fire II. I offer personal reiki sessions and tarot readings."
+
+
+	[params.contact]
+		hide  = false
+		title = "Get In Touch"
+		content = "I'm available in the Milwaukee area for in-person reiki and tarot sessions. Can't be in person? I'm happy to do distance reiki and tarot as well, over skype, facetime, or google."
+
+		# This can be exact coordinates or a searchable address in google maps
+		address = [
+			"Milwaukee, WI",
+			"United States"
+		]
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "kate@katerevitte.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+	[params.portfolio]
+		hide  = true
+		title = "Photography"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "fulls/01.jpg"
+			thumb = "thumbs/01.jpg"
+			title = "An old building in Nürnberg, Germany"
+			description = "From the middle ages"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/02.jpg"
+			thumb = "thumbs/02.jpg"
+			title = "Peaceful bridge"
+			description = "The reflection in the water"
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+
+
